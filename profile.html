@@ -4,16 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Profil</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>Selamat datang di Halaman Profil</h1>
-    <p>Paragraf</p>
-    <h2><u>Biodata</u></h2>
-    <p>Nama: Nadzal Ismail Hamdzah</p>
-    <p>Umur: 19</p>
-    <p>Alamat: Jl. BLK Pasar</p>
-    <p>Hobby: Membaca Buku</p>
-
-    <a href="index.html">Kembali ke Beranda</a>
+<body class="p-10 flex gap-10">
+    <div class="flex flex-col gap-5 max-w-[20%]">
+        <h2 class="font-bold">Account Management</h2>
+        <div class="flex flex-col gap-5">
+            <div class="max-h-96 overflow-hidden relative">
+                <img src="nadzal.png" alt="">
+                <div class="absolute inset-0 flex items-start justify-end text-white text-3xl mr-4 mt-2 g"><a href="" class="bg-black/30 py-1 px-3 rounded-full">X</a></div>
+            </div>
+            <div class="flex items-center justify-center gap-5 p-4 border-2 border border-gray-300 bg-gray-200 rounded-lg">
+                <a href="" class="bg-white px-26 py-2 border border-gray-300 rounded-lg font-semibold">Upload Photo</a>
+            </div>
+        </div>
+        <div>
+            <div class="flex flex-col gap-3 mb-3">
+                <label for="old_password" class="font-bold">Old Password:</label>
+                <input type="password" id="old_password" name="old_password" class="border border-gray-300 rounded-lg px-3 py-2">
+            </div>
+            <div class="flex flex-col gap-3 mb-3">
+                <label for="new_password" class="font-bold">New Password:</label>
+                <input type="password" id="new_password" name="new_password" class="border border-gray-300 rounded-lg px-3 py-2">
+            </div>
+            <a href=""><button class="w-full h-12 bg-white text-black font-bold border border-gray-300 rounded-lg mt-3">Upload Photo</button></a>
+        </div>
+    </div>
+    <div class="w-1 h-screen bg-gray-200"></div>
+    <div>
+        <div>
+            <h2 class="font-bold">Profile Information</h2>
+            <div class="flex gap-10 mt-4">
+                <div class="flex flex-col gap-3 mb-3">
+                    <label for="username" class="font-semibold">Username:</label>
+                    <input type="text" id="username" name="username" class="w-96 border border-gray-300 rounded-lg px-3 py-2">
+                </div>
+                <div class="flex flex-col gap-3 mb-3">
+                    <label for="first_name" class="font-semibold">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" class="w-96 border border-gray-300 rounded-lg px-3 py-2">
+                </div>
+            </div>
+            <div class="flex gap-10 mt-4">
+                <div class="flex flex-col gap-3 mb-3">
+                    <label for="nickname" class="font-semibold">Nickname:</label>
+                    <input type="text" id="nickname" name="nickname" class="w-96 border border-gray-300 rounded-lg px-3 py-2">
+                </div>
+                <div class="flex flex-col gap-3 mb-3">
+                    <label for="role" class="font-semibold">Role:</label>
+                    <input type="text" id="role" name="role" class="w-96 border border-gray-300 rounded-lg px-3 py-2"></div>
+            </div>
+            <div class="flex gap-10 mt-4">
+                <div class="flex flex-col gap-3 mb-3">
+                    <label for="last_name" class="font-semibold">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" class="w-96 border border-gray-300 rounded-lg px-3 py-2">
+                </div>
+                <div class="flex flex-col gap-3 mb-3">
+                    <label for="display_name" class="font-semibold">Display Name Publicly as:</label>
+                    <input type="text" id="display_name" name="display_name" class="w-96 border border-gray-300 rounded-lg px-3 py-2">
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="font-bold">Contact Info</h2>
+            <div class="flex gap-10 mt-4">
+                <div class="flex flex-col gap-3 mb-3">
+                    <label for="email" class="font-semibold">Email: </label>
+                    <input type="email" id="email" name="email" class="w-96 border border-gray-300 rounded-lg px-3 py-2">
+                </div>
+                <div class="flex flex-col gap-3 mb-3">
+                    <label for="whatsapp" class="font-semibold">whatsapp:</label>
+                    <input type="text" id="whatsapp" name="whatsapp" class="w-96 border border-gray-300 rounded-lg px-3 py-2">
+                </div>
+            </div>
+            <div class="flex gap-10 mt-4">
+                <div class="flex flex-col gap-3 mb-3">
+                    <label for="website" class="font-semibold">website:</label>
+                    <input type="text" id="website" name="website" class="w-96 border border-gray-300 rounded-lg px-3 py-2">
+                </div>
+                <div class="flex flex-col gap-3 mb-3">
+                    <label for="telegram" class="font-semibold">telegram:</label>
+                    <input type="text" id="telegram" name="telegram" class="w-96 border border-gray-300 rounded-lg px-3 py-2"></div>
+            </div>
+        </div>
+        <div class="mt-6">
+            <h2 class="font-bold">About the User</h2>
+            <div class="flex flex-col gap-3 mb-3 mt-4">
+                <label for="biography" class="font-semibold">Biographical Info:</label>
+                <textarea id="biography" name="biography" rows="4" cols="50" class="border border-gray-300 rounded-lg px-3 py-2"></textarea>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
